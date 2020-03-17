@@ -62,10 +62,10 @@ h4 {
  * -------------------*/
 
 .columns-block {
-    display                : -webkit-flex;
+   /* display                : -webkit-flex;
     display                : flex;
     -webkit-flex-direction : row;
-    flex-direction         : row;
+    flex-direction         : row;*/
     margin                 : 60px auto;
     padding                : 0;
     box-shadow             : 0 0 0 1px #eaeaea;
@@ -89,6 +89,9 @@ h4 {
     flex         : 3 0 0;
     position     : relative;
     background   : #ffffff;
+    overflow: visible; 
+    box-sizing: border-box; 
+    min-height: 1px;
     }
 
 @media (max-width : 768px) {
@@ -171,7 +174,7 @@ h4 {
     }
 
 .header .profile-img {
-    margin-bottom : 50px;
+    margin-bottom : 30px;
     }
 
 .header .content-wrapper {
@@ -344,3 +347,74 @@ h4 {
  */ 
 #left { position: absolute; left: 0; top: 0; width: 50%; }
 #right { position: absolute; right: 0; top: 0; width: 50%; }
+
+
+.content-item h2{
+	margin-bottom:0px
+}
+
+.self-content{
+    margin-top: 20px;
+}
+.self-content strong{
+    font-weight: 600;
+    font-size: 16px;
+}
+.self-content address{
+    margin-bottom: 10px;
+}
+.self-content-sub{
+    font-size: 14px;
+}
+strong.strong-small{
+    font-weight: 500;
+}
+
+#main-wrapper{
+    background-image: url("./bg4.jpg");
+    background: linear-gradient(120deg,#5e92e2,#3c63a9 40%,#5792ff 90%,#67b2ff 100%)
+}
+
+.content-item-img{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.content-item-img .profile-img{
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 2px solid #eeeef5;
+    width: 120px;
+    height: 90px;
+}
+
+.content-item-img-border{
+    display: flex;padding-bottom: 20px;padding-top: 10px
+}
+.content-item-img-border .profile-img{
+    width: 250px;
+    flex: 3;
+}
+
+.content-item-img-border .content-text{
+    flex: 5;
+}
+
+
+
+.theiaStickySidebar{
+    padding-top: 0px;
+    padding-bottom: 1px;
+    position: static; 
+    transform: none;
+}
+
+
+
+.theiaStickySidebar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
